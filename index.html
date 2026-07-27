@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Margarita Montañez Davenport</title>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1. HEADER -->
+<header>
+  <h1>Margarita Montañez Davenport</h1>
+  <div class="subtitle">Full-Stack Engineer</div>
+  <div class="contact">
+    <a href="mailto:margarita.m.davenport@gmail.com">margarita.m.davenport@gmail.com</a>
+    <a href="https://github.com/mmdavenport" target="_blank" rel="noopener">github.com/mmdavenport</a>
+    <a href="https://linkedin.com/in/margarita-montanez-davenport-680652226" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</header>
+
+<!-- 2. SEE IT WORK -->
+<section>
+  <h2>See it work</h2>
+  <div class="video-wrap">
+    <iframe src="https://www.youtube-nocookie.com/embed/PBPa0egVjks" title="Full-stack walkthrough" allow="autoplay; encrypted-media" allowfullscreen loading="lazy"></iframe>
+  </div>
+  <p>
+    A start-to-finish walkthrough of the production platform: wallet
+    connection via EIP-6963, SIWE authentication, on-chain token minting,
+    session attestation on Sepolia, and the dashboard that ties it together.
+    Every step runs against live contracts and a real backend &mdash; nothing
+    mocked.
+  </p>
+</section>
+
+<!-- 3. THE STACK -->
+<section>
+  <h2>The stack</h2>
+
+  <div class="stack-row">
+    <div class="stack-label">Smart contracts</div>
+    <div class="stack-detail">
+      9 verified on Ethereum Sepolia &mdash; ERC-20, ERC-721, ERC-1155, custom governance.
+      <div class="contracts">
+        <a href="https://eth-sepolia.blockscout.com/address/0x1ae1e10929f008d1f9883ce574a318abd86084e2" target="_blank" title="HypnoNeuroToken (ERC-20)">0x1ae1…84e2</a>
+        <a href="https://eth-sepolia.blockscout.com/address/0x93583a7A24e50075c79b06db0be8Cf4D45B0bd88" target="_blank" title="EHTv2 (ERC-20)">0x9358…0d88</a>
+        <a href="https://eth-sepolia.blockscout.com/address/0xCb9EcB00574DB29976c7C54045d443666D5C7771" target="_blank" title="HypnoNeuroNFT (ERC-721)">0xCb9E…7771</a>
+        <a href="https://eth-sepolia.blockscout.com/address/0x4afA577fA914068451e0Aa97b61F23960f02aCc4" target="_blank" title="Session attestation">0x4afA…aCc4</a>
+        <a href="https://eth-sepolia.blockscout.com/address/0x5e1757441D7d4a29788e6A59892d9F159DAB3c3B" target="_blank" title="AlchemistForge">0x5e17…3c3B</a>
+        <a href="https://eth-sepolia.blockscout.com/address/0x804C41CA6A688a33A0FC33F8B13Dab5C02Fa2C50" target="_blank" title="BenevolenceFund v3">0x804C…2C50</a>
+        <a href="https://eth-sepolia.blockscout.com/address/0xC3F11d2F1F12bB96b9DCF7e8f85e9704D2869B8D" target="_blank" title="Achievement credentials (ERC-1155)">0xC3F1…9B8D</a>
+        <a href="https://eth-sepolia.blockscout.com/address/0x21571805e57f792b66604b140a45D8C1b2E196b8" target="_blank" title="NeuroBalanceConsent">0x2157…96b8</a>
+        <a href="https://eth-sepolia.blockscout.com/address/0x09f318717B44a22919Bd0B0EA445A41Ad889168c" target="_blank" title="MerkleAnchor">0x09f3…168c</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-label">Backend</div>
+    <div class="stack-detail">Node.js, PostgreSQL, REST API, WebSocket signaling, WebRTC session rooms.</div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-label">Frontend</div>
+    <div class="stack-detail">
+      React, TypeScript, Next.js &mdash;
+      <a href="https://encrypthealth.io" target="_blank" rel="noopener">live site</a>
+    </div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-label">Design system</div>
+    <div class="stack-detail">
+      Tokens, 9 components, Storybook &mdash;
+      <a href="https://ui-kit-lime-tau.vercel.app" target="_blank" rel="noopener">live Storybook</a>
+      &middot;
+      <a href="https://github.com/mmdavenport/ui-kit" target="_blank" rel="noopener">source</a>
+    </div>
+  </div>
+
+  <div class="stack-row">
+    <div class="stack-label">Open source</div>
+    <div class="stack-detail">
+      <a href="https://github.com/bcgov/aries-vcr/pull/811" target="_blank" rel="noopener">aries-vcr #811</a> (merged) &middot;
+      <a href="https://github.com/openmrs/openmrs-module-fhir2/pull/577" target="_blank" rel="noopener">openmrs/fhir2 #577</a> &middot;
+      <a href="https://github.com/openmrs/openmrs-contrib-fhir2-ig/pull/63" target="_blank" rel="noopener">openmrs/fhir2-ig #63</a>
+    </div>
+  </div>
+</section>
+
+<!-- 4. HOW I WORK -->
+<section class="method">
+  <h2>How I work</h2>
+  <p>
+    I scope work with agent contracts: each task names the files it touches,
+    the acceptance criteria, and a standing rule that nothing outside scope
+    gets modified. This eliminates drive-by refactors and keeps diffs
+    reviewable.
+  </p>
+  <p>
+    Every build artifact is verified against what it claims to be. Deployed
+    contract addresses are checked against Blockscout on-chain state, not
+    against configuration files or dashboards. Served pages are curl-verified
+    against the live domain, not the build output. If the grep says clean but
+    the browser says otherwise, the browser wins.
+  </p>
+  <p>
+    Claims auditing is a first-class practice: every public-facing assertion
+    (&ldquo;verified,&rdquo; &ldquo;deployed,&rdquo; &ldquo;live&rdquo;) is
+    traced to the artifact it describes, not to the document that says so. If
+    the artifact contradicts the document, the document is wrong.
+  </p>
+</section>
+
+<!-- 5. FOOTER -->
+<footer>
+  <a href="mailto:margarita.m.davenport@gmail.com">margarita.m.davenport@gmail.com</a>
+</footer>
+
+</body>
+</html>
