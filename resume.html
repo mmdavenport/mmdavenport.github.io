@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Resume — Margarita Montañez Davenport</title>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  @page { size: letter; margin: 0.5in 0.6in; }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: #fff;
+    color: #1a1a2e;
+    font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 9pt;
+    line-height: 1.3;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Header */
+  .header {
+    text-align: center;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  .header h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 17pt;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    margin-bottom: 2px;
+    color: #1a1a2e;
+  }
+  .header .title-line {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 9pt;
+    color: #555;
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+  }
+  .header .contact {
+    font-size: 8pt;
+    color: #555;
+  }
+  .header .contact a { color: #555; text-decoration: none; }
+
+  /* Section headings */
+  h2 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 8.5pt;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .section-rule {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 8px 0 4px;
+  }
+  .section-rule.accent {
+    border-image: linear-gradient(90deg, #b08d57 2.5rem, #ccc 2.5rem) 1;
+  }
+
+  /* Experience entries */
+  .entry {
+    border-bottom: 1px solid #e5e5e5;
+    padding: 4px 0;
+    margin-bottom: 3px;
+  }
+  .entry:last-child { border-bottom: none; }
+  .entry-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1px;
+  }
+  .entry-title {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 9.5pt;
+    color: #1a1a2e;
+  }
+  .entry-org { font-size: 9pt; color: #444; }
+  .entry-dates {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 8pt;
+    color: #555;
+    white-space: nowrap;
+  }
+  .entry p {
+    font-size: 9pt;
+    line-height: 1.3;
+    margin-top: 2px;
+    color: #333;
+  }
+
+  /* Skills grid */
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 7.5rem 1fr;
+    gap: 2px 10px;
+    font-size: 9pt;
+  }
+  .skills-grid dt {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 8pt;
+    color: #333;
+  }
+  .skills-grid dd { margin: 0; color: #444; }
+
+  /* Compact lists */
+  .compact-list { list-style: none; padding: 0; }
+  .compact-list li {
+    font-size: 9pt;
+    line-height: 1.25;
+    margin-bottom: 1px;
+    color: #333;
+  }
+  .compact-list .label { font-weight: 600; }
+  .compact-list .inst { color: #666; font-size: 8.5pt; }
+
+  /* OSS */
+  .oss { font-size: 9pt; color: #333; }
+  .oss .repo { font-family: 'IBM Plex Mono', monospace; font-size: 8.5pt; }
+
+  /* Links */
+  a { color: #333; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<header class="header">
+  <h1>MARGARITA MONTAÑEZ DAVENPORT</h1>
+  <div class="title-line">Systems Architect · Product · Digital Health · Decentralized Systems</div>
+  <div class="contact">
+    margarita.m.davenport@gmail.com · <a href="https://mmdavenport.github.io">mmdavenport.github.io</a> · <a href="https://github.com/mmdavenport">github.com/mmdavenport</a> · <a href="https://linkedin.com/in/margarita-montanez-davenport-680652226">LinkedIn</a>
+  </div>
+</header>
+
+<hr class="section-rule accent"/><h2>Summary</h2>
+<p style="font-size:9pt;line-height:1.35;margin-bottom:4px">Systems architect across physical and digital products. Thirty years clinical. Built a product line seed-to-shelf, redesigned care-team workflow and compensation across a multi-site dental group, and now own a five-surface health platform end to end — discovery, roadmap, authorization model, interface, and the contracts underneath. The constant is designing systems people have to trust with something that matters to them.</p>
+
+<hr class="section-rule accent"/><h2>Skills</h2>
+<dl class="skills-grid">
+  <dt>Product</dt><dd>Discovery and roadmapping · requirements and success metrics · cross-functional delivery · 0-to-1</dd>
+  <dt>Front end</dt><dd>React · TypeScript · design systems · Storybook · tokens and variants · accessibility (WCAG AA)</dd>
+  <dt>Decentralized</dt><dd>Solidity · Hardhat · ERC-20 and ERC-721 · on-chain consent and attestation · EIP-6963 wallet integration · Merkle proofs · IPFS</dd>
+  <dt>Data</dt><dd>SQL · Python · Pandas · R · Tableau · Jupyter · schema design · ETL</dd>
+  <dt>Health systems</dt><dd>HL7 · FHIR · OMOP · EHR mapping · clinical workflow design</dd>
+  <dt>Clinical systems</dt><dd>Dentrix · Denticon · Eaglesoft · Open Dental · MacPractice · Archy · tab32 · SoftDent</dd>
+</dl>
+
+<hr class="section-rule accent"/><h2>Experience</h2>
+
+<div class="entry">
+  <div class="entry-header">
+    <div><span class="entry-title">Founder &amp; Product Lead</span> · <span class="entry-org">Future Systems Lab LLC</span></div>
+    <span class="entry-dates">2023 – Present</span>
+  </div>
+  <p>Own product strategy and delivery for a hybrid on-chain/off-chain health platform where participants hold their own credentials. Shipped the consent and authorization layer, the session and identity model, and the React/TypeScript design system all five surfaces are built from. Eleven contracts authored, deployed, and source-verified on Ethereum Sepolia — ten current, one superseded. Defined the roadmap, wrote the requirements, ran the security audit.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-header">
+    <div><span class="entry-title">Practice Operations Lead &amp; Clinical Lead</span> · <span class="entry-org">Riccobene Associates Family Dentistry</span></div>
+    <span class="entry-dates">2019 – 2025</span>
+  </div>
+  <p>Redesigned clinical workflow and the hygiene compensation model across one of the largest US dental service organizations. Per-provider production $380,710 to $624,640 annualized, a 64% increase across four documented years; department share of office production 30.4% to 38.1%.</p>
+</div>
+
+<div class="entry">
+  <div class="entry-header">
+    <div><span class="entry-title">Founder &amp; Clinical Director</span> · <span class="entry-org">SunCodes Holistic Health</span></div>
+    <span class="entry-dates">2018 – 2023</span>
+  </div>
+  <p>Owned a product line end to end — formulation, packaging and label design, third-party lab testing, batch compliance, retail buildout — then moved it direct-to-consumer in 2020.</p>
+</div>
+
+<hr class="section-rule"/><h2>Open Source</h2>
+<p class="oss"><span class="repo">bcgov/aries-vcr</span> PR #811 (merged) · <span class="repo">openmrs/fhir2</span> PR #577 and <span class="repo">openmrs/fhir2-ig</span> PR #63 (under review)</p>
+
+<hr class="section-rule"/><h2>Education and Certifications</h2>
+<ul class="compact-list">
+  <li><span class="label">B.S., Management Information Systems &amp; Business Analytics</span> · <span class="inst">Colorado State University Global, 2026</span></li>
+  <li>Registered Dental Hygienist since 2002, NC License #7177</li>
+</ul>
+
+</body>
+</html>
