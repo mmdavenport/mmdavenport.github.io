@@ -34,6 +34,15 @@
     mocked.
   </p>
   <p>
+    The session shown is an original bilateral-stimulation exercise designed and
+    built from scratch: a canvas-rendered target oscillating left-right on a
+    cosine-interpolated path &mdash; roughly 45 seconds, 20 passes, driven by
+    requestAnimationFrame. Completing it produces a wallet-signed claim; the
+    server verifies the signature before minting 1 HNT on Sepolia and records the
+    session with its transaction hash, so the dashboard reads live on-chain state
+    back to the participant &mdash; the full loop from interaction to verifiable record.
+  </p>
+  <p>
     Verify: <a href="https://eth-sepolia.blockscout.com/address/0x4afA577fA914068451e0Aa97b61F23960f02aCc4" target="_blank" rel="noopener">SovereignLedger v2 on Blockscout</a>
   </p>
   <p style="font-size:0.85rem">
