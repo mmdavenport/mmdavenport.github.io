@@ -191,15 +191,11 @@
   <p>
     Every build artifact is verified against what it claims to be. Deployed
     contract addresses are checked against Blockscout on-chain state, not
-    against configuration files or dashboards. Served pages are curl-verified
-    against the live domain, not the build output. If the grep says clean but
-    the browser says otherwise, the browser wins.
-  </p>
-  <p>
-    Claims auditing is a first-class practice: every public-facing assertion
-    (&ldquo;verified,&rdquo; &ldquo;deployed,&rdquo; &ldquo;live&rdquo;) is
-    traced to the artifact it describes, not to the document that says so. If
-    the artifact contradicts the document, the document is wrong.
+    configuration files; served pages are curl-verified against the live domain,
+    not the build output. Every public-facing assertion &mdash;
+    &ldquo;verified,&rdquo; &ldquo;deployed,&rdquo; &ldquo;live&rdquo; &mdash;
+    is traced to the artifact it describes. If the artifact contradicts the
+    document, the document is wrong.
   </p>
 </section>
 
