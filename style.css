@@ -68,6 +68,15 @@ section { margin-bottom: 48px; }
 .contact a { color: var(--dim); }
 .contact a:hover { color: var(--accent); }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+.brand img { display: block; height: 56px; width: auto; }
+.brand h1 { margin-bottom: 0; }
+
 .subtitle {
   font-size: 0.8rem;
   color: var(--muted);
