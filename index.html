@@ -32,7 +32,7 @@
   <p>
     A start-to-finish walkthrough of the production platform: wallet
     connection via EIP-6963, SIWE authentication, on-chain token minting,
-    session attestation on Sepolia, and the dashboard that ties it together.
+    session attestation on the Ethereum Sepolia testnet, and the dashboard that ties it together.
     Every step runs against live contracts and a real backend &mdash; nothing
     mocked.
   </p>
@@ -41,7 +41,7 @@
     built from scratch: a canvas-rendered target oscillating left-right on a
     cosine-interpolated path &mdash; roughly 45 seconds, 20 passes, driven by
     requestAnimationFrame. Completing it produces a wallet-signed claim; the
-    server verifies the signature before minting 1 HNT on Sepolia and records the
+    server verifies the signature before minting 1 HNT on the Ethereum Sepolia testnet and records the
     session with its transaction hash, so the dashboard reads live on-chain state
     back to the participant &mdash; the full loop from interaction to verifiable record.
   </p>
@@ -78,8 +78,9 @@
   <p>
     A five-surface hybrid platform for health data where the participant holds
     their own credentials. Consent is captured as a cryptographic signature
-    from the participant's wallet, attested on-chain, and enforced across
-    web, session, and storage layers.
+    from the participant's wallet, recorded on FSL's server, and enforced across
+    web, session, and storage layers; session attestations are recorded on the
+    Ethereum Sepolia testnet.
   </p>
   <p>
     I own it end to end: the authorization model, the session and identity
